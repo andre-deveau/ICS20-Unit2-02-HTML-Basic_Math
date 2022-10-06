@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<!-- ICS20-Assignment1 -->
+<!-- ICS2O-Unit2-02-HTML -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Steve Jobs" />
-    <meta name="keywords" content="mths, ics20" />
-    <meta name="author" content="Andre Deveau" />
-    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <meta name="description" content="Basic Math, with JS" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Mr. Coxall" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link
       rel="stylesheet"
-      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
       href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
     />
-    <style>
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
-    <title>Steve Jobs</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Perimeter and Area, with JS</title>
   </head>
-  <!-- This is the body of the Website -->
   <body>
-    <h1 id="my-header">Steve Jobs</h1>
-    <img
-      src="./images/stevejobs.jpg"
-      style="width: 7000px; height: 7000px"
-      alt="style"
-    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class = "mdl-layout__header">
+        <div class = "mdl-layout__header-row">
+          <span class = "mdl-layout-title">Perimeter and Area, with JS</span>
+        </div>
+      </header>
+      <main class = "mdl-layout__content">
+        <br />
+        <p>The Dimensions of a Rectangle are: 24cm and 8cm</p>
+        <!-- basic text -->
+        <div id="area">
+          <p>The Area is: ?</p>
+        <div id="perimeter">
+          <p>The Perimeter is: ?</p>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateClicked()">
+          Calculate
+        </button>
+      </main>
+    </div>
   </body>
 </html>
